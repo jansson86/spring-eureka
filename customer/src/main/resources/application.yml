@@ -1,0 +1,15 @@
+server:
+  port: 0
+spring:
+  application:
+    name: customer
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+    instance:
+      statusPageUrlPath: ${management.contextPath}/info
+      healthCheckUrlPath: ${management.contextPath}/health
