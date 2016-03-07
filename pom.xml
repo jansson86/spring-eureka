@@ -8,6 +8,7 @@
         <module>customer</module>
         <module>service-discovery</module>
         <module>monitoring</module>
+        <module>turbine</module>
     </modules>
     <groupId>ax.jansson.eureka</groupId>
     <artifactId>eureka-parent</artifactId>

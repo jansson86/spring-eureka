@@ -1,12 +1,12 @@
-package ax.jansson.account;
+package ax.jansson.customer.remote;
 
 import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-@FeignClient(name = "customer")
-public interface CustomerService {
+@FeignClient(name = "account")
+public interface AccountService {
 
-    @RequestMapping(value = "customer", method = RequestMethod.GET)
-    int customer();
+    @RequestMapping(value = "account", method = RequestMethod.GET)
+    String account();
 }

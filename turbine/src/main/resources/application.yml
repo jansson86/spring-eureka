@@ -1,11 +1,14 @@
 turbine:
   aggregator:
-    clusterConfig: eurekacluster
-  appConfig: customer,account
-
+    clusterConfig: FLIGHT-INTEGRATION-SERVICE
+  appConfig: flight-integration-service
+InstanceDiscovery:
+  impl: com.netflix.turbine.discovery.EurekaInstanceDiscovery.class
 spring:
   application:
-    name: dashboard
+    name: turbine
+server:
+  port: 8081
 eureka:
   client:
     serviceUrl:

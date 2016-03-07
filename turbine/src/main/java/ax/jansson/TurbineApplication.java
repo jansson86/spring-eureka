@@ -1,18 +1,17 @@
-package ax.jansson.account;
+package ax.jansson;
 
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
-import org.springframework.cloud.netflix.feign.EnableFeignClients;
+import org.springframework.cloud.netflix.turbine.EnableTurbine;
 
 @SpringBootApplication
+@EnableTurbine
 @EnableEurekaClient
-@EnableFeignClients
-public class AccountApplication {
+public class TurbineApplication {
 
     public static void main(String... args) {
-        SpringApplication.run(AccountApplication.class, args);
+        SpringApplication.run(TurbineApplication.class, args);
     }
-
 }
